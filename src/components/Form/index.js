@@ -19,7 +19,7 @@ const Form = () => {
         placeholder="quand cherchez-vous?"
       />
       <button type="submit" className="form-button">
-        Rechercher
+        <i class="fas fa-search"></i>
       </button>
     </form>
   );

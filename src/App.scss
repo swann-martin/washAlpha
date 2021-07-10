@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 .App {
+  min-height: 100%;
   &-header {
     display: flex;
     flex-direction: column;
@@ -14,6 +15,40 @@
 .App-logo {
   height: 20vmin;
   pointer-events: none;
+}
+.App-main {
+  text-align: center;
+}
+.machines {
+  &-title {
+    margin: 1rem auto;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  &-element {
+    margin: 0.5rem;
+    box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.2);
+    border-radius: 10px;
+    max-width: 10rem;
+    max-height: 30rem;
+    cursor: pointer;
+    overflow: hidden;
+    &:hover {
+      transform: scale(1.025);
+    }
+    &-picture {
+      object-fit: cover;
+      width: 10rem;
+      height: 15rem;
+    }
+    &-description {
+      background-color: white;
+      padding: 0.5rem;
+      text-align: left;
+    }
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
