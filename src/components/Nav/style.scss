@@ -1,0 +1,45 @@
+.nav {
+  font-family: 'Dancing Script', cursive;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    width: 26px;
+    height: 26px;
+    margin-right: 0.5rem;
+  }
+  ul {
+    display: flex;
+    li {
+      margin-left: 2rem;
+      font-size: 1.4rem;
+    }
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  .link {
+    color: white;
+    padding: 1rem 0.5rem;
+    border-radius: 20px;
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.1);
+    }
+    &--active {
+      border-bottom: solid 2.5px #bae6ff;
+    }
+  }
+  .nav-right {
+    display: flex;
+    align-items: center;
+    img {
+      border: solid 2px #bae6ff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+  }
+}
