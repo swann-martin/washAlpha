@@ -31,7 +31,7 @@ const App = () => {
               <p className="machines-element-description">
                 {machine.description}
                 <p>
-                  <i class="fas fa-heart"></i> {machine.likes}
+                  <i class="fas fa-heart"></i> {machine.likes}e{' '}
                 </p>
               </p>
             </div>
